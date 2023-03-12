@@ -57,17 +57,49 @@ This repository contains a collection of design patterns implemented in java
 ## Behavioral patterns
 ### los patrones de comportamiento se centran en las comunicaciones entre los objetos y cómo se distribuyen las responsabilidades entre ellos.
 * [Chain of Responsibility]
+  * evita acoplar el remitente de una solicitud a su receptor al dar a más de un objeto la oportunidad de manejar la solicitud. Encadena los objetos receptores y pasa la solicitud a lo largo de la cadena hasta que un objeto la maneja.
+  * un caso de uso común de este patrón es cuando se necesita que más de un objeto pueda manejar una solicitud, y el manejador no se conoce de antemano, el manejador debe ser decidido dinámicamente.
+  * ![Chain of Responsibility](images/chainOfResponsibility.png)
 * [Command]
   * encapsula una solicitud como un objeto, lo que permite parametrizar otros objetos con diferentes solicitudes, colas o registros de solicitudes y soporta operaciones que pueden deshacerse.
+  * un caso de uso común de este patrón es cuando se necesita parametrizar objetos con operaciones.
+  * ![Command](images/command.png)
 * [Interpreter]
+  * dada una lengua, define una representación para su gramática junto con un intérprete que usa la representación para interpretar sentencias en la lengua.
+  * un caso de uso común de este patrón es cuando se necesita interpretar lenguajes, por ejemplo, expresiones aritméticas.
+  * ![Interpreter](images/interpreter.png)
 * [Iterator]
+  * proporciona un modo de acceder secuencialmente a los elementos de un objeto agregado sin exponer su representación subyacente.
+  * un caso de uso común de este patrón es cuando se necesita acceder a un objeto agregado, pero no se sabe o no importa sus representaciones subyacentes.
+  * ![Iterator](images/iterator.png)
 * [Mediator]
+  * define un objeto que encapsula la forma en que un conjunto de objetos interactúa. Mediator promueve el acoplamiento débil al evitar que los objetos se refieran explícitamente unos a otros y permite variar sus interacciones independientemente.
+  * un caso de uso común de este patrón es cuando se necesita variar las interacciones entre objetos de forma independiente.
+  * ![Mediator](images/mediator.png)
 * [Memento]
+  * sin violar el encapsulamiento, captura y externaliza un estado interno de un objeto, de forma que el objeto pueda ser restaurado a este estado más tarde.
+  * un caso de uso común de este patrón es cuando se necesita capturar y restaurar el estado interno de un objeto sin violar su encapsulamiento.
+  * ![Memento](images/memento.png)
 * [Observer]
+  * define una dependencia de uno a muchos entre objetos de modo que cuando un objeto cambia de estado, todos sus dependientes son notificados y actualizados automáticamente.
+  * un caso de uso común de este patrón es cuando se necesita notificar a varios objetos sobre cualquier cambio de estado o evento que ocurra en otro objeto.
+  * ![Observer](images/observer.png)
 * [State]
+  * permite a un objeto alterar su comportamiento cuando su estado interno cambia. El objeto parecerá cambiar de clase.
+  * un caso de uso común de este patrón es cuando un objeto debe cambiar su comportamiento en función de su estado interno, y el número de estados es grande o desconocido.
+  * ![State](images/state.png)
 * [Strategy]
+  * define una familia de algoritmos, encapsula cada uno de ellos y los hace intercambiables. Strategy permite que el algoritmo varíe independientemente de los clientes que lo usan.
+  * un caso de uso común de este patrón es cuando se necesita usar diferentes algoritmos en diferentes situaciones, y se sabe que estos algoritmos pueden cambiar a lo largo del tiempo.
+  * ![Strategy](images/strategy.png)
 * [Template Method]
+  * define el esqueleto de un algoritmo en una operación, retrasando algunos pasos a las subclases. Template Method permite que las subclases redefinan ciertos pasos de un algoritmo sin cambiar la estructura del mismo.
+  * un caso de uso común de este patrón es cuando se necesita definir el esqueleto de un algoritmo en una operación, definiendo ciertos pasos pero dejando otros para que sean implementados por las subclases.
+  * ![Template Method](images/templateMethod.png)
 * [Visitor]
+  * representa una operación a realizar sobre los elementos de un objeto estructural. Visitor permite definir una nueva operación sin cambiar las clases de los elementos sobre los que opera.
+  * un caso de uso común de este patrón es cuando se necesita definir una nueva operación sobre los elementos de un objeto estructural sin cambiar las clases de los elementos.
+  * ![Visitor](images/visitor.png)
 
 ## Propósito de los patrones de diseño (GoF)
 ![Design Patterns](images/relations_one.png)
