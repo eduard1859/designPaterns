@@ -1,8 +1,20 @@
-# Design patterns
+# Principles of Software Design
 This repository contains a collection of design patterns implemented in java
+## S—>El Principio de Responsabilidad Única (SRP)
+  * Una clase debería tener una única responsabilidad, y sólo una razón para cambiar.
+## O—>El Principio de Abierto/Cerrado (OCP)
+  * Las entidades de software (clases, módulos, funciones, etc.) deberían estar abiertas a la extensión, pero cerradas a la modificación.
+## L—>El Principio de Sustitución de Liskov (LSP)
+  * Los objetos de una clase derivada deben ser capaces de sustituir a los objetos de la clase base sin interrupción del comportamiento del programa.
+## I—>El Principio de Segregación de Interfaces (ISP)
+  * Ninguna clase debería verse obligada a depender de métodos que no use.
+## D—>El Principio de Inversión de Dependencia (DIP)
+  * Los módulos de alto nivel no deberían depender de módulos de bajo nivel, ambos deberían depender de abstracciones; las abstracciones no deberían depender de los detalles, sino los detalles deberían depender de las abstracciones.
 
+# Design Patterns
 ## Creational patterns 
 ### los patrones de creación se centran en la forma de crear objetos y cómo estos objetos se relacionan entre sí y con el entorno.
+![creational](images/creational.png)
 * [Abstract Factory]
   * proporciona una interfaz para crear familias de objetos relacionados o dependientes sin especificar sus clases concretas.
   * un caso de uso común de este patrón es cuando una aplicación debe crear una familia de objetos relacionados, pero no sabe de antemano qué clases concretas necesitará.
@@ -25,6 +37,7 @@ This repository contains a collection of design patterns implemented in java
     * ![Singleton](images/singleton.png)
 ## Structural patterns
 ### los patrones estructurales se centran en cómo se componen los objetos y clases, tratando de optimizar la estructura general del software.
+![structural](images/structural.png)
 * [Adapter]
   * convierte la interfaz de una clase en otra interfaz que los clientes esperan. Adapter permite que clases trabajen juntas que de otra forma no podrían debido a interfaces incompatibles.
   * un caso de uso común de este patrón es cuando se necesita utilizar una clase existente, pero su interfaz no es compatible con el resto del código.
@@ -56,6 +69,7 @@ This repository contains a collection of design patterns implemented in java
 
 ## Behavioral patterns
 ### los patrones de comportamiento se centran en las comunicaciones entre los objetos y cómo se distribuyen las responsabilidades entre ellos.
+![behavioral](images/behavioral.png)
 * [Chain of Responsibility]
   * evita acoplar el remitente de una solicitud a su receptor al dar a más de un objeto la oportunidad de manejar la solicitud. Encadena los objetos receptores y pasa la solicitud a lo largo de la cadena hasta que un objeto la maneja.
   * un caso de uso común de este patrón es cuando se necesita que más de un objeto pueda manejar una solicitud, y el manejador no se conoce de antemano, el manejador debe ser decidido dinámicamente.
