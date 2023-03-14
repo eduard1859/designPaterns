@@ -1,13 +1,19 @@
 # Principles of Software Design
-This repository contains a collection of design patterns implemented in java
+SOLID es un acrónimo que representa cinco principios fundamentales de diseño de software orientado a objetos. Estos principios fueron definidos por Robert C. Martin (también conocido como "Uncle Bob") y se utilizan para crear un diseño de software robusto, mantenible y escalable. Aquí están los cinco principios de SOLID:
+
+* Principio de Responsabilidad Única (Single Responsibility Principle - SRP)
+* Principio de Abierto/Cerrado (Open/Closed Principle - OCP)
+* Principio de Sustitución de Liskov (Liskov Substitution Principle - LSP)
+* Principio de Segregación de Interfaces (Interface Segregation Principle - ISP)
+* Principio de Inversión de Dependencias (Dependency Inversion Principle - DIP)
 ## S—>El Principio de Responsabilidad Única (SRP)
-  * Una clase debería tener una única responsabilidad, y sólo una razón para cambiar.
+  * Este principio establece que una clase debería tener solo una responsabilidad única, es decir, solo debe haber una razón para que una clase cambie. Si una clase tiene más de una responsabilidad, puede ser difícil de mantener y extender. En resumen, una clase debe hacer solo una cosa y hacerla bien.
 ## O—>El Principio de Abierto/Cerrado (OCP)
-  * Las entidades de software (clases, módulos, funciones, etc.) deberían estar abiertas a la extensión, pero cerradas a la modificación.
+  * Este principio establece que una clase debería estar abierta para extensión pero cerrada para modificación. Es decir, se debería poder extender una clase para agregar nuevas funcionalidades sin cambiar el código existente. Esto se puede lograr mediante el uso de patrones de diseño como el patrón de estrategia y el patrón de decorador.
 ## L—>El Principio de Sustitución de Liskov (LSP)
-  * Los objetos de una clase derivada deben ser capaces de sustituir a los objetos de la clase base sin interrupción del comportamiento del programa.
+  * Este principio establece que una instancia de una subclase debería poder ser usada en lugar de una instancia de su clase base sin afectar la corrección del programa. En otras palabras, las subclases no deben alterar el comportamiento de las clases base. Si no se cumple este principio, puede dar lugar a comportamientos inesperados y errores en el programa.
 ## I—>El Principio de Segregación de Interfaces (ISP)
-  * Ninguna clase debería verse obligada a depender de métodos que no use.
+  * Este principio establece que una clase no debe depender de interfaces que no utiliza. Es decir, las interfaces deben ser pequeñas y específicas para cada función y no deben tener más métodos de los necesarios. Si una clase implementa una interfaz con métodos que no utiliza, puede ser difícil de mantener y extender.
 ## D—>El Principio de Inversión de Dependencia (DIP)
   * Los módulos de alto nivel no deberían depender de módulos de bajo nivel, ambos deberían depender de abstracciones; las abstracciones no deberían depender de los detalles, sino los detalles deberían depender de las abstracciones.
 
@@ -19,6 +25,7 @@ This repository contains a collection of design patterns implemented in java
   * proporciona una interfaz para crear familias de objetos relacionados o dependientes sin especificar sus clases concretas.
   * un caso de uso común de este patrón es cuando una aplicación debe crear una familia de objetos relacionados, pero no sabe de antemano qué clases concretas necesitará.
   ![Abstract Factory](images/abstractfactory.png)
+  * Veamos un ejemplo. Supongamos que estamos desarrollando un videojuego de rol (RPG) y queremos crear una fábrica para crear personajes, monstruos y objetos relacionados con el juego. En lugar de crear una clase para cada objeto, podemos utilizar el patrón Abstract Factory para crear una fábrica abstracta que produzca diferentes tipos de personajes, monstruos y objetos
 * [Builder]
   * separa la construcción de un objeto complejo de su representación para que el mismo proceso de construcción pueda crear diferentes representaciones.
   * un caso de uso común de este patrón es cuando un algoritmo debe crear diferentes representaciones de un objeto, dependiendo de cómo se construya el objeto.
@@ -41,11 +48,13 @@ This repository contains a collection of design patterns implemented in java
 * [Adapter]
   * convierte la interfaz de una clase en otra interfaz que los clientes esperan. Adapter permite que clases trabajen juntas que de otra forma no podrían debido a interfaces incompatibles.
   * un caso de uso común de este patrón es cuando se necesita utilizar una clase existente, pero su interfaz no es compatible con el resto del código.
-  * ![Adapter](images/adapter.png)
+  ![Adapter](images/adapter.png)
+  * Supongamos que tenemos una clase que representa a un robot, con un método move() que mueve el robot hacia adelante. También tenemos una interfaz Moveable que define un método moveForward(). Pero el robot no implementa la interfaz Moveable. En lugar de hacer que el robot implemente la interfaz Moveable, podemos crear un adaptador para convertir la interfaz del robot en la interfaz Moveable
 * [Bridge]
   * separa una abstracción de su implementación para que las dos puedan variar independientemente.
   * un caso de uso común de este patrón es cuando se necesita extender una clase en varias dimensiones independientes.
   * ![Bridge](images/bridge.png)
+  * Un ejemplo común de uso del patrón Bridge es en la creación de formas de dibujo en un programa de dibujo. La abstracción define la forma, mientras que la implementación define cómo se dibuja la forma. El puente conecta ambas partes y permite a las formas y a la implementación variar de forma independiente.
 * [Composite]
   * permite a los clientes tratar a objetos individuales y composiciones de objetos de forma uniforme.
   * un caso de uso común de este patrón es un árbol de objetos en el que cada nodo puede ser un objeto simple u otra composición.
