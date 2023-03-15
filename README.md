@@ -128,3 +128,30 @@ SOLID es un acrónimo que representa cinco principios fundamentales de diseño d
 ![Design Patterns](images/relations_one.png)
 ## Relations between design patterns
 ![Design Patterns](images/relations_two.png)
+## Analogias de los patrones de diseño
+### Patrones creacionales:
+* Singleton: una caja registradora de una tienda que debe ser única en todo el establecimiento.
+* Factory Method: una fábrica de chocolates que produce diferentes tipos de chocolates con los mismos ingredientes básicos.
+* Abstract Factory: una fábrica de muebles que produce diferentes tipos de muebles (sillas, mesas, etc.) con diferentes materiales (madera, metal, etc.).
+* Builder: un menú personalizado en un restaurante donde el cliente elige los ingredientes para su comida.
+* Prototype: un catálogo de prendas de ropa donde los clientes pueden ver diferentes combinaciones de ropa.
+### Patrones estructurales:
+* Adapter: un enchufe que convierte la energía eléctrica de una toma de corriente de un país en la toma de corriente de otro país.
+* Bridge: un control remoto que permite a los usuarios controlar diferentes dispositivos electrónicos en su hogar.
+* Composite: un árbol genealógico donde cada nodo puede tener hijos y padres, formando una estructura jerárquica.
+* Decorator: un pastel decorado con diferentes coberturas, como frutas, flores o dulces.
+* Facade: un cajero automático que oculta la complejidad de las operaciones bancarias para el usuario.
+* Flyweight: una impresora que utiliza el mismo patrón para imprimir múltiples documentos.
+* Proxy: un servidor proxy que actúa como intermediario entre el cliente y el servidor de destino.
+### Patrones de comportamiento:
+* Chain of Responsibility: un sistema de atención al cliente donde las quejas se manejan a través de múltiples niveles de autoridad.
+* Command: un control remoto de televisión que envía diferentes comandos a la televisión según la tecla que se presione.
+* Interpreter: una calculadora que interpreta y resuelve diferentes expresiones matemáticas.
+* Iterator: una lista de tareas donde el usuario puede avanzar y retroceder entre diferentes elementos de la lista.
+* Mediator: un chat en línea donde los usuarios se comunican a través de un mediador central.
+* Memento: un editor de texto que permite deshacer y rehacer las acciones del usuario.
+* Observer: una suscripción a una revista que notifica al suscriptor cada vez que se publica un nuevo número.
+* State: un reproductor de música que cambia su estado (reproduciendo, en pausa, detenido) según la interacción del usuario.
+* Strategy: una aplicación de edición de imágenes que permite al usuario seleccionar diferentes estrategias de edición para una misma imagen.
+* Template Method: un formulario en línea que sigue la misma estructura, pero tiene diferentes campos de información según el tipo de formulario que se está llenando.
+* Visitor: una aplicación que analiza diferentes tipos de archivos y los procesa según su tipo.
