@@ -135,6 +135,11 @@ SOLID es un acrónimo que representa cinco principios fundamentales de diseño d
 * Abstract Factory: una fábrica de muebles que produce diferentes tipos de muebles (sillas, mesas, etc.) con diferentes materiales (madera, metal, etc.).
 * Builder: un menú personalizado en un restaurante donde el cliente elige los ingredientes para su comida.
 * Prototype: un catálogo de prendas de ropa donde los clientes pueden ver diferentes combinaciones de ropa.
+* Singleton: Un restaurante que sólo tiene una cocina en la que se preparan todos los platillos.
+* Factory Method: Una fábrica de juguetes que produce diferentes tipos de muñecos.
+* Abstract Factory: Una compañía de muebles que fabrica distintos tipos de mesas, sillas, sofás, etc.
+* Builder: Un constructor de casas que permite al comprador personalizar las características de la vivienda.
+* Prototype: Un servicio de copiado de llaves que crea copias exactas de la original.
 ### Patrones estructurales:
 * Adapter: un enchufe que convierte la energía eléctrica de una toma de corriente de un país en la toma de corriente de otro país.
 * Bridge: un control remoto que permite a los usuarios controlar diferentes dispositivos electrónicos en su hogar.
@@ -143,6 +148,13 @@ SOLID es un acrónimo que representa cinco principios fundamentales de diseño d
 * Facade: un cajero automático que oculta la complejidad de las operaciones bancarias para el usuario.
 * Flyweight: una impresora que utiliza el mismo patrón para imprimir múltiples documentos.
 * Proxy: un servidor proxy que actúa como intermediario entre el cliente y el servidor de destino.
+*  Adapter: Un adaptador de corriente que permite utilizar un dispositivo diseñado para una toma de corriente en otra toma de corriente diferente.
+*  Bridge: Una compañía de vehículos que ofrece diferentes modelos de coches en distintas versiones: gasolina, eléctrico, híbrido, etc.
+*  Composite: Un menú de un restaurante que ofrece diferentes platos que pueden ser combinados para crear un menú personalizado.
+*  Decorator: Un pastelero que decora pasteles con diferentes diseños y ornamentos.
+*  Facade: Un servicio de suscripción que simplifica la compra de diferentes revistas y periódicos.
+*  Flyweight: Un juego de mesa que utiliza una cantidad limitada de fichas que se comparten entre todos los jugadores.
+*  Proxy: Un servicio de streaming que utiliza servidores proxy para hacer streaming de contenido bloqueado en ciertas regiones.
 ### Patrones de comportamiento:
 * Chain of Responsibility: un sistema de atención al cliente donde las quejas se manejan a través de múltiples niveles de autoridad.
 * Command: un control remoto de televisión que envía diferentes comandos a la televisión según la tecla que se presione.
@@ -155,3 +167,14 @@ SOLID es un acrónimo que representa cinco principios fundamentales de diseño d
 * Strategy: una aplicación de edición de imágenes que permite al usuario seleccionar diferentes estrategias de edición para una misma imagen.
 * Template Method: un formulario en línea que sigue la misma estructura, pero tiene diferentes campos de información según el tipo de formulario que se está llenando.
 * Visitor: una aplicación que analiza diferentes tipos de archivos y los procesa según su tipo.
+*  Chain of Responsibility: Un equipo de soporte técnico que asigna a un técnico la responsabilidad de resolver un problema, y si este no lo puede resolver, lo remite a otro técnico con habilidades más avanzadas.
+*  Command: Un control remoto de televisión que permite al usuario cambiar los canales o ajustar el volumen.
+*  Interpreter: Un intérprete que traduce un lenguaje de programación a otro lenguaje que la computadora puede entender.
+*  Iterator: Un catálogo de una tienda en línea que permite al usuario recorrer una lista de productos y agregarlos a un carrito de compras.
+*  Mediator: Un sistema de chat que permite a los usuarios enviar mensajes a través de un servidor central.
+*  Memento: Un editor de texto que permite deshacer o rehacer cambios en un documento.
+*  Observer: Una aplicación de clima que envía notificaciones a los usuarios cuando hay cambios en las condiciones climáticas.
+*  State: Un termostato inteligente que cambia automáticamente la temperatura de una habitación en función de la presencia o ausencia de personas.
+*  Strategy: Una aplicación de correo electrónico que ofrece diferentes opciones para organizar, etiquetar y eliminar correos electrónicos.
+*  Template Method: Un curso en línea que utiliza una estructura de lecciones predefinidas que se pueden personalizar para adaptarse a las necesidades del estudiante.
+*  Visitor: Un museo que permite a los visitantes recorrer diferentes galerías con exposiciones de arte y ciencia.
