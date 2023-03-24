@@ -5,6 +5,7 @@ import com.design.paterns.creational.builder.product.DocumentacionPDF;
 public class DocumentacionVehiculoPDF  extends DocumentacionVehiculo{
 
   public DocumentacionVehiculoPDF() {
+
     documentacion = new DocumentacionPDF();
   }
 

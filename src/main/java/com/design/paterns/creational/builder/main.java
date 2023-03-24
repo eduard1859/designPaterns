@@ -10,9 +10,14 @@ public class main {
 
     public static void main(String[] args) {
       // TODO Auto-generated method stub
-        DocumentacionVehiculo documentacionVehiculo = new DocumentacionVehiculoPDF();
-        Vendedor vendedor = new Vendedor(documentacionVehiculo);
+        DocumentacionVehiculo documentacionVehiculoPdf = new DocumentacionVehiculoPDF();
+        Vendedor vendedor = new Vendedor(documentacionVehiculoPdf);
         Documentacion documentacion = vendedor.construye("Juan Perez");
+        documentacion.imprime();
+
+        DocumentacionVehiculo documentacionVehiculoHtml = new DocumentacionVehiculoHtml();
+        vendedor = new Vendedor(documentacionVehiculoHtml);
+        documentacion = vendedor.construye("Juan Perez");
         documentacion.imprime();
     }
 }

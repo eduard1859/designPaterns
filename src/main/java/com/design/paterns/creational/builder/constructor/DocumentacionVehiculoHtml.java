@@ -5,6 +5,7 @@ import com.design.paterns.creational.builder.product.DocumentacionHTML;
 public class DocumentacionVehiculoHtml extends  DocumentacionVehiculo{
 
   public DocumentacionVehiculoHtml() {
+
     documentacion = new DocumentacionHTML();
   }
 
