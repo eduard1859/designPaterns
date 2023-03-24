@@ -1,9 +1,10 @@
 package com.design.paterns.creational.abstractfactory;
 
-import com.design.paterns.creational.abstractfactory.factory.IFabricaVehiculo;
+import com.design.paterns.creational.abstractfactory.factory.FabricaVehiculo;
 import com.design.paterns.creational.abstractfactory.factory.FabricaVehiculoElectrico;
 import com.design.paterns.creational.abstractfactory.factory.FabricaVehiculoGasolina;
 import com.design.paterns.creational.abstractfactory.product.Automovil;
+import com.design.paterns.creational.abstractfactory.product.Scotter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,20 +12,29 @@ public class main {
 
   public static void main(String[] args) {
    // crear  10 vehiculo electrico y 10 vehiculo gasolina con un ciclo for
-    IFabricaVehiculo IFabricaVehiculo = new FabricaVehiculoElectrico();
-    List<Automovil> automoviles = new ArrayList<Automovil>();
+    FabricaVehiculo fabricaVehiculoElectrico = new FabricaVehiculoElectrico();
+    List<Automovil> automovilList = new ArrayList();
+    List<Scotter> scotterList = new ArrayList();
     for (int i = 0; i < 10; i++) {
-      automoviles.add(IFabricaVehiculo.creaAutomovil("modelo" + i, "color" + i, 100 + i, 100.0 + i));
+      Automovil automovilElectrico = fabricaVehiculoElectrico.creaAutomovil("modelo" + i, "color" + i, 100 + i, 100.0 + i);
+      automovilList.add(automovilElectrico);
+      Scotter scotterElectrico = fabricaVehiculoElectrico.creaScotter("modelo" + i, "color" + i, 100 + i);
+      scotterList.add(scotterElectrico);
     }
-    IFabricaVehiculo IFabricaVehiculo2 = new FabricaVehiculoGasolina();
+    FabricaVehiculo fabricaVehiculoGasolina = new FabricaVehiculoGasolina();
     for (int i = 0; i < 10; i++) {
-      automoviles.add(IFabricaVehiculo2.creaAutomovil("modelo" + i, "color" + i, 100 + i, 100.0 + i));
+      Automovil automovilGasolina = fabricaVehiculoGasolina.creaAutomovil("modelo" + i, "color" + i, 100 + i, 100.0 + i);
+      automovilList.add(automovilGasolina);
+      Scotter scotterManual = fabricaVehiculoGasolina.creaScotter("modelo" + i, "color" + i, 100 + i);
+      scotterList.add(scotterManual);
     }
+
     // mostrar las caracteristicas de los vehiculos
-    for (Automovil automovil : automoviles) {
-      automovil.mostrarCaracteristicas();
+    for (Automovil automovil : automovilList) {
+        automovil.mostrarCaracteristicas();
     }
-
-
+    for (Scotter scotter : scotterList) {
+        scotter.mostrarCaracteristicas();
+    }
   }
 }
