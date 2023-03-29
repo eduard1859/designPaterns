@@ -8,6 +8,7 @@ public class DocumentPdf implements Documento {
     protected ComponentPdf implementacion;
 
     public DocumentPdf() {
+
         implementacion = new ComponentPdf();
     }
 

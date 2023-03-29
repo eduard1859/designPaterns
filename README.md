@@ -77,7 +77,7 @@ SOLID es un acrónimo que representa cinco principios fundamentales de diseño d
   * ![Proxy](images/proxy.png)
 
 ## Behavioral patterns
-### los patrones de comportamiento se centran en las comunicaciones entre los objetos y cómo se distribuyen las responsabilidades entre ellos.
+### Los patrones de comportamiento se centran en las comunicaciones entre los objetos y cómo se distribuyen las responsabilidades entre ellos.
 ![behavioral](images/behavioral.png)
 * [Chain of Responsibility]
   * evita acoplar el remitente de una solicitud a su receptor al dar a más de un objeto la oportunidad de manejar la solicitud. Encadena los objetos receptores y pasa la solicitud a lo largo de la cadena hasta que un objeto la maneja.
