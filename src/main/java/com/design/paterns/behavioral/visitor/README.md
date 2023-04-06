@@ -7,5 +7,7 @@
 * ObjectStructure
 * Client
 
+## Descripción
+
 ## Diagrama
 ![visitor](diagrama/visitor.png)
