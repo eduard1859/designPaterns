@@ -3,7 +3,7 @@ package com.design.paterns.creational.factorymethod.example2;
 /*
 
  */
-public class main {
+public class Pizzeria {
 
   // Clase abstracta Pizza
   public abstract static class Pizza {
